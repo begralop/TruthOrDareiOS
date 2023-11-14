@@ -1,0 +1,14 @@
+"welcome_view_text" = "Welcome to... Truth or dare!";
+"app_name" = "Truth or dare";
+"nihe_view_text" = "Never Have I Ever...";
+"select_turn_view" = "Is the turn of…";
+"select_btn_truth_view" = "TRUTH";
+"select_btn_dare_view" = "DARE";
+"play_button_players_view" = "PLAY";
+"add_name_button_players_view" = "Add name";
+"et_hint_name_view" = "Enter a name…";
+"et_players_view" = "PLAYERS";
+"btn_play_welcome_view" = "PLAY NOW";
+"btn_play_nhie_welcome_view" = "NEVER HAVE I EVER…";
+"btn_next_questions_view" = "NEXT";
+"tv_questions_view" = "The question is…";
