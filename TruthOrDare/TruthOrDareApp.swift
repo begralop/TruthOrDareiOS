@@ -1,6 +1,6 @@
 //
 //  TruthOrDareApp.swift
-//  TruthOrDare
+//  TruthOrDareeeeeee
 //
 //  Created by Belén Grande López on 13/11/23.
 //
