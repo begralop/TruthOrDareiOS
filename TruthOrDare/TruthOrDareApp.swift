@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TruthOrDareApp: App {
+    @EnvironmentObject var coordinator : Coordinator
     var body: some Scene {
         WindowGroup {
             SplashScreen()
+                .environmentObject(coordinator)
         }
     }
 }

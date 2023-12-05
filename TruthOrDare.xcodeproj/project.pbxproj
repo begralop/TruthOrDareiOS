@@ -10,7 +10,6 @@
 		F802527F2B026F6300B5360D /* TruthOrDareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802527E2B026F6300B5360D /* TruthOrDareApp.swift */; };
 		F80252812B026F6300B5360D /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80252802B026F6300B5360D /* SplashScreen.swift */; };
 		F80252832B026F6600B5360D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80252822B026F6600B5360D /* Assets.xcassets */; };
-		F80252862B026F6600B5360D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80252852B026F6600B5360D /* Preview Assets.xcassets */; };
 		F871A5AF2B0390910042D6D7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F871A5AE2B0390910042D6D7 /* Lottie */; };
 		F871A5B12B0390AD0042D6D7 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F871A5B02B0390AD0042D6D7 /* LottieView.swift */; };
 		F871A5BA2B0391D60042D6D7 /* LottieConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F871A5B92B0391D60042D6D7 /* LottieConstants.swift */; };
@@ -19,6 +18,7 @@
 		F871A5C82B039F450042D6D7 /* demon_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F871A5C52B039F450042D6D7 /* demon_animation.json */; };
 		F871A5C92B039F450042D6D7 /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F871A5C62B039F450042D6D7 /* loading_animation.json */; };
 		F871A5CA2B039F450042D6D7 /* angel_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F871A5C72B039F450042D6D7 /* angel_animation.json */; };
+		F8826CC32B1F85FB007C08D2 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826CC22B1F85FB007C08D2 /* QuestionViewModel.swift */; };
 		F8C400882B0F746E000B7DEB /* NeverHaveIEverQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400872B0F746E000B7DEB /* NeverHaveIEverQuestion.swift */; };
 		F8C4008A2B0F74C0000B7DEB /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400892B0F74C0000B7DEB /* APIResponse.swift */; };
 		F8C4008C2B0F7733000B7DEB /* TruthQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4008B2B0F7733000B7DEB /* TruthQuestion.swift */; };
@@ -31,7 +31,7 @@
 		F8C400B12B0F7D97000B7DEB /* TruthRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B02B0F7D97000B7DEB /* TruthRemoteService.swift */; };
 		F8C400B32B0F7DCB000B7DEB /* LiveTruthRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B22B0F7DCB000B7DEB /* LiveTruthRemoteService.swift */; };
 		F8C400B52B0F7EBC000B7DEB /* MockTruthRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B42B0F7EBC000B7DEB /* MockTruthRemoteService.swift */; };
-		F8C400B72B0F7EEA000B7DEB /* TruthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B62B0F7EEA000B7DEB /* TruthRepository.swift */; };
+		F8C400B72B0F7EEA000B7DEB /* TruthOrDareRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B62B0F7EEA000B7DEB /* TruthOrDareRepository.swift */; };
 		F8C400B92B0F7F13000B7DEB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B82B0F7F13000B7DEB /* Coordinator.swift */; };
 		F8C400BE2B0F7FD5000B7DEB /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400BD2B0F7FD5000B7DEB /* QuestionView.swift */; };
 /* End PBXBuildFile section */
@@ -41,7 +41,6 @@
 		F802527E2B026F6300B5360D /* TruthOrDareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareApp.swift; sourceTree = "<group>"; };
 		F80252802B026F6300B5360D /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F80252822B026F6600B5360D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F80252852B026F6600B5360D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F871A5B02B0390AD0042D6D7 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		F871A5B92B0391D60042D6D7 /* LottieConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieConstants.swift; sourceTree = "<group>"; };
 		F871A5BB2B03948F0042D6D7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -50,6 +49,9 @@
 		F871A5C52B039F450042D6D7 /* demon_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = demon_animation.json; path = "../../../../../Downloads/truthordare-app-master/app/src/main/res/raw/demon_animation.json"; sourceTree = "<group>"; };
 		F871A5C62B039F450042D6D7 /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading_animation.json; path = "../../../../../Downloads/truthordare-app-master/app/src/main/res/raw/loading_animation.json"; sourceTree = "<group>"; };
 		F871A5C72B039F450042D6D7 /* angel_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = angel_animation.json; path = "../../../../../Downloads/truthordare-app-master/app/src/main/res/raw/angel_animation.json"; sourceTree = "<group>"; };
+		F8826CC22B1F85FB007C08D2 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		F8826CC92B1F9FE4007C08D2 /* custom_font.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = custom_font.xml; sourceTree = "<group>"; };
+		F8826CCA2B1F9FE4007C08D2 /* font_play.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font_play.ttf; sourceTree = "<group>"; };
 		F8C400872B0F746E000B7DEB /* NeverHaveIEverQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverQuestion.swift; sourceTree = "<group>"; };
 		F8C400892B0F74C0000B7DEB /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		F8C4008B2B0F7733000B7DEB /* TruthQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthQuestion.swift; sourceTree = "<group>"; };
@@ -62,7 +64,7 @@
 		F8C400B02B0F7D97000B7DEB /* TruthRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthRemoteService.swift; sourceTree = "<group>"; };
 		F8C400B22B0F7DCB000B7DEB /* LiveTruthRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTruthRemoteService.swift; sourceTree = "<group>"; };
 		F8C400B42B0F7EBC000B7DEB /* MockTruthRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTruthRemoteService.swift; sourceTree = "<group>"; };
-		F8C400B62B0F7EEA000B7DEB /* TruthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthRepository.swift; sourceTree = "<group>"; };
+		F8C400B62B0F7EEA000B7DEB /* TruthOrDareRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareRepository.swift; sourceTree = "<group>"; };
 		F8C400B82B0F7F13000B7DEB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F8C400BD2B0F7FD5000B7DEB /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				F802527D2B026F6300B5360D /* TruthOrDare */,
-				F80252842B026F6600B5360D /* Preview Content */,
 				F802527C2B026F6300B5360D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +100,7 @@
 		F802527D2B026F6300B5360D /* TruthOrDare */ = {
 			isa = PBXGroup;
 			children = (
+				F8C31D8C2B1BB0CC0053E9D0 /* Preview Content */,
 				F8C400AB2B0F7D46000B7DEB /* Data */,
 				F871A5B22B03910C0042D6D7 /* Assets */,
 				F8C400862B0F7462000B7DEB /* Entities */,
@@ -114,14 +116,6 @@
 			path = TruthOrDare;
 			sourceTree = "<group>";
 		};
-		F80252842B026F6600B5360D /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F80252852B026F6600B5360D /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		F871A5B22B03910C0042D6D7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +124,22 @@
 				F871A5C62B039F450042D6D7 /* loading_animation.json */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		F8826CC82B1F9FDC007C08D2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				F8826CC92B1F9FE4007C08D2 /* custom_font.xml */,
+				F8826CCA2B1F9FE4007C08D2 /* font_play.ttf */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F8C31D8C2B1BB0CC0053E9D0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		F8C400862B0F7462000B7DEB /* Entities */ = {
@@ -192,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				F8C400BD2B0F7FD5000B7DEB /* QuestionView.swift */,
+				F8826CC22B1F85FB007C08D2 /* QuestionViewModel.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -199,6 +210,7 @@
 		F8C400A32B0F7A8D000B7DEB /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				F8826CC82B1F9FDC007C08D2 /* New Group */,
 				F871A5B02B0390AD0042D6D7 /* LottieView.swift */,
 			);
 			path = Widgets;
@@ -236,7 +248,7 @@
 		F8C400AC2B0F7D4F000B7DEB /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				F8C400B62B0F7EEA000B7DEB /* TruthRepository.swift */,
+				F8C400B62B0F7EEA000B7DEB /* TruthOrDareRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -338,7 +350,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F80252862B026F6600B5360D /* Preview Assets.xcassets in Resources */,
 				F871A5C12B0398F60042D6D7 /* Localizable.strings in Resources */,
 				F80252832B026F6600B5360D /* Assets.xcassets in Resources */,
 				F871A5C92B039F450042D6D7 /* loading_animation.json in Resources */,
@@ -355,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C400BE2B0F7FD5000B7DEB /* QuestionView.swift in Sources */,
+				F8826CC32B1F85FB007C08D2 /* QuestionViewModel.swift in Sources */,
 				F8C4008A2B0F74C0000B7DEB /* APIResponse.swift in Sources */,
 				F8C400902B0F78A3000B7DEB /* TranslationsResponse.swift in Sources */,
 				F8C400B32B0F7DCB000B7DEB /* LiveTruthRemoteService.swift in Sources */,
@@ -362,7 +374,7 @@
 				F8C400952B0F792B000B7DEB /* NetworkClient.swift in Sources */,
 				F8C400962B0F792B000B7DEB /* URLSessionNetworkClient.swift in Sources */,
 				F8C400B52B0F7EBC000B7DEB /* MockTruthRemoteService.swift in Sources */,
-				F8C400B72B0F7EEA000B7DEB /* TruthRepository.swift in Sources */,
+				F8C400B72B0F7EEA000B7DEB /* TruthOrDareRepository.swift in Sources */,
 				F80252812B026F6300B5360D /* SplashScreen.swift in Sources */,
 				F8C400B12B0F7D97000B7DEB /* TruthRemoteService.swift in Sources */,
 				F8C400882B0F746E000B7DEB /* NeverHaveIEverQuestion.swift in Sources */,

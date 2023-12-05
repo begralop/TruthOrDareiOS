@@ -11,11 +11,13 @@ import Lottie
 struct SplashScreen: View {
     
     @State var isActive: Bool = false
+    @EnvironmentObject var coordinator : Coordinator
 
     var body: some View {
         ZStack {
             if self.isActive {
                     WelcomeView()
+                    .environmentObject(coordinator)
                 } else {
                     Color.backgroundSplash.edgesIgnoringSafeArea(.all)
                     VStack {
@@ -41,5 +43,7 @@ struct SplashScreen: View {
 }
 
 #Preview {
+  //  let coordinator = Coordinator()
     SplashScreen()
+       // .environmentObject(coordinator)
 }

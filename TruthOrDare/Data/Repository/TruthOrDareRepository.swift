@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct TruthRepository {
+struct TruthOrDareRepository {
     let remoteService: TruthRemoteService
     
     init(remoteService: TruthRemoteService) {
@@ -16,4 +16,6 @@ struct TruthRepository {
     func getTruth() async throws -> [TruthQuestion] {
         return try await remoteService.getTruth()
     }
+    
+   // func getDare()
 }

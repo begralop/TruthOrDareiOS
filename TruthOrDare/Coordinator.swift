@@ -8,7 +8,7 @@
 import Foundation
 
 class Coordinator: ObservableObject {
-    private let truthRepository: TruthRepository
+    private let truthRepository: TruthOrDareRepository
     
     init(mock: Bool = false) {
         let networkClient = URLSessionNetworkClient()
@@ -16,13 +16,17 @@ class Coordinator: ObservableObject {
         // MARK: Truth
         let truthRemoteService: TruthRemoteService = mock ? MockTruthRemoteService() : LiveTruthRemoteService(networkClient: networkClient)
         
-        self.truthRepository = TruthRepository(remoteService: truthRemoteService)
+        self.truthRepository = TruthOrDareRepository(remoteService: truthRemoteService)
     
     }
     
     // MARK: Truth views
-    //func makeTruthView() -> Truth {
-      //  return FilmsView(viewModel: makeFilmsViewModel())
-    //}
+    func makeQuestionView() -> QuestionView {
+        return QuestionView(viewModel: makeQuestionViewModel())
+    }
+    
+    private func makeQuestionViewModel() -> QuestionViewModel {
+        return QuestionViewModel(truthOrDareRepository: truthRepository)
+    }
 
 }

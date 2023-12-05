@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WelcomeView: View {
+        
     var body: some View {
         ZStack {
             Image("BackgroundImage")
@@ -25,7 +26,7 @@ struct WelcomeView: View {
                     .minimumScaleFactor(0.5) // Factor de escala mínimo
 
                 Button(action: {
-                    // Action for play button
+                    
                 }) {
                     Text(NSLocalizedString("btn_play_welcome_view", comment: ""))
                        // .font(.custom("custom_font", size: 18))
@@ -59,5 +60,8 @@ struct WelcomeView: View {
 }
 
 #Preview {
+    
+ //   let coordinator = Coordinator()
     WelcomeView()
+       // .environmentObject(coordinator)
 }
