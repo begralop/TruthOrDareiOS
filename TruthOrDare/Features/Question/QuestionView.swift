@@ -28,8 +28,8 @@ struct QuestionView: View {
                 VStack {
                     Spacer()
                     
-                    Text("Your question is... \(viewModel.truth?[0].question ?? "N/A")")
-                        .font(.custom("custom_font", size: 28))
+                    Text("\(viewModel.truth?[0].question ?? "N/A")")
+                        .font(Font.custom("font_play", size: 18))
                             .foregroundColor(Color.black)
                             .padding(.horizontal, 32)
                             .padding(.top, 255)

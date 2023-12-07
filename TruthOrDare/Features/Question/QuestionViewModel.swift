@@ -12,7 +12,7 @@ class QuestionViewModel: ObservableObject {
     
     @Published var isLoading = false
     @Published var truth: [TruthQuestion]?
-   // @Published var dare: TruthQuestion?
+    @Published var dare: [DareQuestion]?
 
     @Published var error: Error?
     
@@ -33,5 +33,18 @@ class QuestionViewModel: ObservableObject {
         
         isLoading = false
     }
-
+    
+    @MainActor
+    func getDare() async {
+        error = nil
+        isLoading = true
+        
+        do {
+            dare = try await truthOrDareRepository.getDare()
+        } catch (let error) {
+            self.error = error
+        }
+        
+        isLoading = false
+    }
 }

@@ -8,60 +8,64 @@
 import SwiftUI
 
 struct WelcomeView: View {
-        
+    
+    @State private var isPlayWelcomeViewActive = false
+    @State private var isPlayNHIEWelcomeViewActive = false
+    @EnvironmentObject var coordinator: Coordinator
+    @State private var selection: String? = nil
+
     var body: some View {
-        ZStack {
-            Image("BackgroundImage")
-                .resizable()
-                .frame(width: 1000, height: 1000)
-                .opacity(0.88)
 
-            VStack {
-                Text(NSLocalizedString("welcome_view_text", comment: ""))
-                    .font(.title)
-                    .foregroundColor(Color.black)
-                    .padding(.top, 335)
-                    .multilineTextAlignment(.center)
-                    .bold()
-                    .minimumScaleFactor(0.5) // Factor de escala mínimo
+        NavigationStack {
+            ZStack {
+                Image("BackgroundImage")
+                    .resizable()
+                    .frame(width: 1000, height: 1000)
+                    .opacity(0.88)
 
-                Button(action: {
+                VStack {
+                    Text(NSLocalizedString("welcome_view_text", comment: ""))
+                        .font(.title)
+                        .foregroundColor(Color.black)
+                        .padding(.top, 335)
+                        .multilineTextAlignment(.center)
+                        .bold()
+                        .minimumScaleFactor(0.5)
                     
-                }) {
-                    Text(NSLocalizedString("btn_play_welcome_view", comment: ""))
-                       // .font(.custom("custom_font", size: 18))
-                        .frame(width: 200, height: 60)
-                        .background(Color.blue)
-                        .foregroundColor(Color.white)
-                }
-                .padding(.top, 28)
+                    Button(action: {
+                        isPlayWelcomeViewActive = true
+                        print("Play button tapped")
+                    }) {
+                        Text(NSLocalizedString("btn_play_welcome_view", comment: ""))
+                            .frame(width: 200, height: 60)
+                            .background(Color.blue)
+                            .foregroundColor(Color.white)
+                    }
+                    .padding(.top, 28)
+                    .navigationDestination(isPresented: $isPlayWelcomeViewActive) {
+                        PlayersView()
+                    }
 
-                Button(action: {
-                    // Action for "Play NHIE" button
-                }) {
+                    Button(action: {
+                        isPlayNHIEWelcomeViewActive = true
+                    }) {
                     Text(NSLocalizedString("btn_play_nhie_welcome_view", comment: ""))
                         .font(.custom("custom_font", size: 18))
                         .frame(width: 160, height: 60)
                         .background(Color.blue)
                         .foregroundColor(Color.white)
-                }
-                .padding(.top, 28)
-
-                Spacer()
-
-                ProgressView()
-                    .frame(width: nil, height: nil, alignment: .center)
+                    }
                     .padding(.top, 28)
-                    .opacity(0.0) // Set to 1.0 if you want it initially visible
+
+                    Spacer()
+
+                }
+                .padding()
             }
-            .padding()
         }
     }
 }
 
 #Preview {
-    
- //   let coordinator = Coordinator()
     WelcomeView()
-       // .environmentObject(coordinator)
 }

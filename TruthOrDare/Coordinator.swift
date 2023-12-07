@@ -8,16 +8,23 @@
 import Foundation
 
 class Coordinator: ObservableObject {
-    private let truthRepository: TruthOrDareRepository
+    
+    private let truthOrDareRepository: TruthOrDareRepository
+    private let neverHaveIEverRepository: NeverHaveIEverRepository
     
     init(mock: Bool = false) {
         let networkClient = URLSessionNetworkClient()
         
-        // MARK: Truth
+        // MARK: Truth or Dare
         let truthRemoteService: TruthRemoteService = mock ? MockTruthRemoteService() : LiveTruthRemoteService(networkClient: networkClient)
+        let dareRemoteService: DareRemoteService = mock ? MockDareRemoteService() : LiveDareRemoteService(networkClient: networkClient)
+
+        self.truthOrDareRepository = TruthOrDareRepository(truthRemoteService: truthRemoteService, dareRemoteService: dareRemoteService)
         
-        self.truthRepository = TruthOrDareRepository(remoteService: truthRemoteService)
-    
+        // MARK: NeverHaveIEver
+        let neverHaveIEverRemoteService: NeverHaveIEverRemoteService = mock ? MockNeverHaveIEverRemoteService() : LiveNeverHaveIEverRemoteService(networkClient: networkClient)
+
+        self.neverHaveIEverRepository = NeverHaveIEverRepository(neverHaveIEverRemoteService: neverHaveIEverRemoteService)
     }
     
     // MARK: Truth views
@@ -26,7 +33,15 @@ class Coordinator: ObservableObject {
     }
     
     private func makeQuestionViewModel() -> QuestionViewModel {
-        return QuestionViewModel(truthOrDareRepository: truthRepository)
+        return QuestionViewModel(truthOrDareRepository: truthOrDareRepository)
     }
-
+    
+    // MARK: Never have i ever views
+    func makeNeverHaveIEverView() -> NeverHaveIEverView {
+        return NeverHaveIEverView(viewModel: self.makeNeverHaveIEverViewModel())
+    }
+    
+    private func makeNeverHaveIEverViewModel() -> NeverHaveIEverViewModel {
+        return NeverHaveIEverViewModel(neverHaveIEverRepository: neverHaveIEverRepository)
+    }
 }

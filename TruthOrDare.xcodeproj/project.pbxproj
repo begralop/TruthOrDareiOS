@@ -10,6 +10,16 @@
 		F802527F2B026F6300B5360D /* TruthOrDareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802527E2B026F6300B5360D /* TruthOrDareApp.swift */; };
 		F80252812B026F6300B5360D /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80252802B026F6300B5360D /* SplashScreen.swift */; };
 		F80252832B026F6600B5360D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80252822B026F6600B5360D /* Assets.xcassets */; };
+		F861E32D2B21D40D0062D1F7 /* SelectTruthOrDareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E32C2B21D40D0062D1F7 /* SelectTruthOrDareView.swift */; };
+		F861E32F2B21E0160062D1F7 /* DareRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E32E2B21E0160062D1F7 /* DareRemoteService.swift */; };
+		F861E3312B21E0420062D1F7 /* LiveDareRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E3302B21E0420062D1F7 /* LiveDareRemoteService.swift */; };
+		F861E3332B21E08C0062D1F7 /* MockDareRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E3322B21E08C0062D1F7 /* MockDareRemoteService.swift */; };
+		F861E3352B21E0B80062D1F7 /* LiveNeverHaveIEverRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E3342B21E0B80062D1F7 /* LiveNeverHaveIEverRemoteService.swift */; };
+		F861E3372B21E0D40062D1F7 /* NeverHaveIEverRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E3362B21E0D40062D1F7 /* NeverHaveIEverRemoteService.swift */; };
+		F861E3392B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E3382B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift */; };
+		F861E33B2B21E1CC0062D1F7 /* NeverHaveIEverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E33A2B21E1CC0062D1F7 /* NeverHaveIEverRepository.swift */; };
+		F861E33D2B21E24D0062D1F7 /* NeverHaveIEverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E33C2B21E24D0062D1F7 /* NeverHaveIEverViewModel.swift */; };
+		F861E33F2B21E3D80062D1F7 /* NeverHaveIEverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E33E2B21E3D80062D1F7 /* NeverHaveIEverView.swift */; };
 		F871A5AF2B0390910042D6D7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F871A5AE2B0390910042D6D7 /* Lottie */; };
 		F871A5B12B0390AD0042D6D7 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F871A5B02B0390AD0042D6D7 /* LottieView.swift */; };
 		F871A5BA2B0391D60042D6D7 /* LottieConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F871A5B92B0391D60042D6D7 /* LottieConstants.swift */; };
@@ -19,6 +29,8 @@
 		F871A5C92B039F450042D6D7 /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F871A5C62B039F450042D6D7 /* loading_animation.json */; };
 		F871A5CA2B039F450042D6D7 /* angel_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F871A5C72B039F450042D6D7 /* angel_animation.json */; };
 		F8826CC32B1F85FB007C08D2 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826CC22B1F85FB007C08D2 /* QuestionViewModel.swift */; };
+		F8826CD32B1FA1C0007C08D2 /* font_play.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8826CD22B1FA1C0007C08D2 /* font_play.ttf */; };
+		F8826CD52B1FA7B5007C08D2 /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826CD42B1FA7B5007C08D2 /* PlayersView.swift */; };
 		F8C400882B0F746E000B7DEB /* NeverHaveIEverQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400872B0F746E000B7DEB /* NeverHaveIEverQuestion.swift */; };
 		F8C4008A2B0F74C0000B7DEB /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400892B0F74C0000B7DEB /* APIResponse.swift */; };
 		F8C4008C2B0F7733000B7DEB /* TruthQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4008B2B0F7733000B7DEB /* TruthQuestion.swift */; };
@@ -41,6 +53,16 @@
 		F802527E2B026F6300B5360D /* TruthOrDareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareApp.swift; sourceTree = "<group>"; };
 		F80252802B026F6300B5360D /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F80252822B026F6600B5360D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F861E32C2B21D40D0062D1F7 /* SelectTruthOrDareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTruthOrDareView.swift; sourceTree = "<group>"; };
+		F861E32E2B21E0160062D1F7 /* DareRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareRemoteService.swift; sourceTree = "<group>"; };
+		F861E3302B21E0420062D1F7 /* LiveDareRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDareRemoteService.swift; sourceTree = "<group>"; };
+		F861E3322B21E08C0062D1F7 /* MockDareRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDareRemoteService.swift; sourceTree = "<group>"; };
+		F861E3342B21E0B80062D1F7 /* LiveNeverHaveIEverRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNeverHaveIEverRemoteService.swift; sourceTree = "<group>"; };
+		F861E3362B21E0D40062D1F7 /* NeverHaveIEverRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverRemoteService.swift; sourceTree = "<group>"; };
+		F861E3382B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNeverHaveIEverRemoteService.swift; sourceTree = "<group>"; };
+		F861E33A2B21E1CC0062D1F7 /* NeverHaveIEverRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverRepository.swift; sourceTree = "<group>"; };
+		F861E33C2B21E24D0062D1F7 /* NeverHaveIEverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverViewModel.swift; sourceTree = "<group>"; };
+		F861E33E2B21E3D80062D1F7 /* NeverHaveIEverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverView.swift; sourceTree = "<group>"; };
 		F871A5B02B0390AD0042D6D7 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		F871A5B92B0391D60042D6D7 /* LottieConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieConstants.swift; sourceTree = "<group>"; };
 		F871A5BB2B03948F0042D6D7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -50,8 +72,9 @@
 		F871A5C62B039F450042D6D7 /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading_animation.json; path = "../../../../../Downloads/truthordare-app-master/app/src/main/res/raw/loading_animation.json"; sourceTree = "<group>"; };
 		F871A5C72B039F450042D6D7 /* angel_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = angel_animation.json; path = "../../../../../Downloads/truthordare-app-master/app/src/main/res/raw/angel_animation.json"; sourceTree = "<group>"; };
 		F8826CC22B1F85FB007C08D2 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
-		F8826CC92B1F9FE4007C08D2 /* custom_font.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = custom_font.xml; sourceTree = "<group>"; };
-		F8826CCA2B1F9FE4007C08D2 /* font_play.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font_play.ttf; sourceTree = "<group>"; };
+		F8826CCB2B1FA0A9007C08D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F8826CD22B1FA1C0007C08D2 /* font_play.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font_play.ttf; sourceTree = "<group>"; };
+		F8826CD42B1FA7B5007C08D2 /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
 		F8C400872B0F746E000B7DEB /* NeverHaveIEverQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverQuestion.swift; sourceTree = "<group>"; };
 		F8C400892B0F74C0000B7DEB /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		F8C4008B2B0F7733000B7DEB /* TruthQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthQuestion.swift; sourceTree = "<group>"; };
@@ -100,6 +123,7 @@
 		F802527D2B026F6300B5360D /* TruthOrDare */ = {
 			isa = PBXGroup;
 			children = (
+				F8826CCB2B1FA0A9007C08D2 /* Info.plist */,
 				F8C31D8C2B1BB0CC0053E9D0 /* Preview Content */,
 				F8C400AB2B0F7D46000B7DEB /* Data */,
 				F871A5B22B03910C0042D6D7 /* Assets */,
@@ -124,15 +148,6 @@
 				F871A5C62B039F450042D6D7 /* loading_animation.json */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		F8826CC82B1F9FDC007C08D2 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				F8826CC92B1F9FE4007C08D2 /* custom_font.xml */,
-				F8826CCA2B1F9FE4007C08D2 /* font_play.ttf */,
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F8C31D8C2B1BB0CC0053E9D0 /* Preview Content */ = {
@@ -180,6 +195,7 @@
 		F8C4009F2B0F79B9000B7DEB /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				F8826CD42B1FA7B5007C08D2 /* PlayersView.swift */,
 			);
 			path = Players;
 			sourceTree = "<group>";
@@ -187,6 +203,8 @@
 		F8C400A02B0F79E8000B7DEB /* NeverHaveIEver */ = {
 			isa = PBXGroup;
 			children = (
+				F861E33C2B21E24D0062D1F7 /* NeverHaveIEverViewModel.swift */,
+				F861E33E2B21E3D80062D1F7 /* NeverHaveIEverView.swift */,
 			);
 			path = NeverHaveIEver;
 			sourceTree = "<group>";
@@ -194,6 +212,7 @@
 		F8C400A12B0F79F3000B7DEB /* SelectTruthOrDare */ = {
 			isa = PBXGroup;
 			children = (
+				F861E32C2B21D40D0062D1F7 /* SelectTruthOrDareView.swift */,
 			);
 			path = SelectTruthOrDare;
 			sourceTree = "<group>";
@@ -210,7 +229,7 @@
 		F8C400A32B0F7A8D000B7DEB /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				F8826CC82B1F9FDC007C08D2 /* New Group */,
+				F8826CD22B1FA1C0007C08D2 /* font_play.ttf */,
 				F871A5B02B0390AD0042D6D7 /* LottieView.swift */,
 			);
 			path = Widgets;
@@ -249,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				F8C400B62B0F7EEA000B7DEB /* TruthOrDareRepository.swift */,
+				F861E33A2B21E1CC0062D1F7 /* NeverHaveIEverRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -266,6 +286,9 @@
 		F8C400AE2B0F7D7C000B7DEB /* Dare */ = {
 			isa = PBXGroup;
 			children = (
+				F861E32E2B21E0160062D1F7 /* DareRemoteService.swift */,
+				F861E3302B21E0420062D1F7 /* LiveDareRemoteService.swift */,
+				F861E3322B21E08C0062D1F7 /* MockDareRemoteService.swift */,
 			);
 			path = Dare;
 			sourceTree = "<group>";
@@ -273,6 +296,9 @@
 		F8C400AF2B0F7D80000B7DEB /* NeverHaveIEver */ = {
 			isa = PBXGroup;
 			children = (
+				F861E3342B21E0B80062D1F7 /* LiveNeverHaveIEverRemoteService.swift */,
+				F861E3362B21E0D40062D1F7 /* NeverHaveIEverRemoteService.swift */,
+				F861E3382B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift */,
 			);
 			path = NeverHaveIEver;
 			sourceTree = "<group>";
@@ -353,6 +379,7 @@
 				F871A5C12B0398F60042D6D7 /* Localizable.strings in Resources */,
 				F80252832B026F6600B5360D /* Assets.xcassets in Resources */,
 				F871A5C92B039F450042D6D7 /* loading_animation.json in Resources */,
+				F8826CD32B1FA1C0007C08D2 /* font_play.ttf in Resources */,
 				F871A5C82B039F450042D6D7 /* demon_animation.json in Resources */,
 				F871A5CA2B039F450042D6D7 /* angel_animation.json in Resources */,
 			);
@@ -366,22 +393,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C400BE2B0F7FD5000B7DEB /* QuestionView.swift in Sources */,
+				F861E32D2B21D40D0062D1F7 /* SelectTruthOrDareView.swift in Sources */,
 				F8826CC32B1F85FB007C08D2 /* QuestionViewModel.swift in Sources */,
 				F8C4008A2B0F74C0000B7DEB /* APIResponse.swift in Sources */,
+				F861E3392B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift in Sources */,
 				F8C400902B0F78A3000B7DEB /* TranslationsResponse.swift in Sources */,
 				F8C400B32B0F7DCB000B7DEB /* LiveTruthRemoteService.swift in Sources */,
 				F871A5BC2B03948F0042D6D7 /* WelcomeView.swift in Sources */,
+				F861E3332B21E08C0062D1F7 /* MockDareRemoteService.swift in Sources */,
 				F8C400952B0F792B000B7DEB /* NetworkClient.swift in Sources */,
 				F8C400962B0F792B000B7DEB /* URLSessionNetworkClient.swift in Sources */,
 				F8C400B52B0F7EBC000B7DEB /* MockTruthRemoteService.swift in Sources */,
+				F8826CD52B1FA7B5007C08D2 /* PlayersView.swift in Sources */,
+				F861E33F2B21E3D80062D1F7 /* NeverHaveIEverView.swift in Sources */,
+				F861E33D2B21E24D0062D1F7 /* NeverHaveIEverViewModel.swift in Sources */,
+				F861E32F2B21E0160062D1F7 /* DareRemoteService.swift in Sources */,
 				F8C400B72B0F7EEA000B7DEB /* TruthOrDareRepository.swift in Sources */,
 				F80252812B026F6300B5360D /* SplashScreen.swift in Sources */,
+				F861E33B2B21E1CC0062D1F7 /* NeverHaveIEverRepository.swift in Sources */,
+				F861E3312B21E0420062D1F7 /* LiveDareRemoteService.swift in Sources */,
+				F861E3372B21E0D40062D1F7 /* NeverHaveIEverRemoteService.swift in Sources */,
 				F8C400B12B0F7D97000B7DEB /* TruthRemoteService.swift in Sources */,
 				F8C400882B0F746E000B7DEB /* NeverHaveIEverQuestion.swift in Sources */,
 				F802527F2B026F6300B5360D /* TruthOrDareApp.swift in Sources */,
 				F8C4008C2B0F7733000B7DEB /* TruthQuestion.swift in Sources */,
 				F8C4008E2B0F7773000B7DEB /* DareQuestion.swift in Sources */,
 				F8C400AA2B0F7C92000B7DEB /* NetworkConstants.swift in Sources */,
+				F861E3352B21E0B80062D1F7 /* LiveNeverHaveIEverRemoteService.swift in Sources */,
 				F8C400972B0F792B000B7DEB /* NetworkError.swift in Sources */,
 				F871A5B12B0390AD0042D6D7 /* LottieView.swift in Sources */,
 				F8C400B92B0F7F13000B7DEB /* Coordinator.swift in Sources */,
@@ -535,6 +573,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TruthOrDare/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TruthOrDare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -563,6 +602,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TruthOrDare/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TruthOrDare/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

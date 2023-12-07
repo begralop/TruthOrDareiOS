@@ -17,7 +17,6 @@ struct SplashScreen: View {
         ZStack {
             if self.isActive {
                     WelcomeView()
-                    .environmentObject(coordinator)
                 } else {
                     Color.backgroundSplash.edgesIgnoringSafeArea(.all)
                     VStack {
@@ -43,7 +42,5 @@ struct SplashScreen: View {
 }
 
 #Preview {
-  //  let coordinator = Coordinator()
     SplashScreen()
-       // .environmentObject(coordinator)
 }

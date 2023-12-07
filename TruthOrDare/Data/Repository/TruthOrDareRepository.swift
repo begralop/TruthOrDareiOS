@@ -7,15 +7,19 @@
 
 import Foundation
 struct TruthOrDareRepository {
-    let remoteService: TruthRemoteService
-    
-    init(remoteService: TruthRemoteService) {
-        self.remoteService = remoteService
+    let truthRemoteService: TruthRemoteService
+    let dareRemoteService: DareRemoteService
+
+    init(truthRemoteService: TruthRemoteService, dareRemoteService: DareRemoteService) {
+        self.truthRemoteService = truthRemoteService
+        self.dareRemoteService = dareRemoteService
     }
     
     func getTruth() async throws -> [TruthQuestion] {
-        return try await remoteService.getTruth()
+        return try await truthRemoteService.getTruth()
     }
     
-   // func getDare()
+    func getDare() async throws -> [DareQuestion] {
+        return try await dareRemoteService.getDare()
+    }
 }

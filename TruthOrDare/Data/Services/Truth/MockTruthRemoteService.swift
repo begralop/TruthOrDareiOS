@@ -9,6 +9,6 @@ import Foundation
 struct MockTruthRemoteService: TruthRemoteService {
     
     func getTruth() async throws -> [TruthQuestion] {
-        return [.example, .example, .example]
+        return [.example]
     }
 }
