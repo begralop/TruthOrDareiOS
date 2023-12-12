@@ -21,7 +21,7 @@ struct NeverHaveIEverView: View {
             }
         }.task {
             await viewModel.getNeverHaveIEver()
-            print(viewModel.neverHaveIEver?.first)
+            print(viewModel.neverHaveIEver?.first ?? "")
         }.alert("Error", isPresented: Binding.constant(viewModel.error != nil)) {
             Button("OK") {}
             Button("Retry") {
