@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F802527F2B026F6300B5360D /* TruthOrDareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802527E2B026F6300B5360D /* TruthOrDareApp.swift */; };
-		F80252812B026F6300B5360D /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80252802B026F6300B5360D /* SplashScreen.swift */; };
 		F80252832B026F6600B5360D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80252822B026F6600B5360D /* Assets.xcassets */; };
+		F83FF2D32B288A7200416789 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83FF2D22B288A7200416789 /* SplashScreen.swift */; };
 		F861E32D2B21D40D0062D1F7 /* SelectTruthOrDareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E32C2B21D40D0062D1F7 /* SelectTruthOrDareView.swift */; };
 		F861E32F2B21E0160062D1F7 /* DareRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E32E2B21E0160062D1F7 /* DareRemoteService.swift */; };
 		F861E3312B21E0420062D1F7 /* LiveDareRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E3302B21E0420062D1F7 /* LiveDareRemoteService.swift */; };
@@ -52,8 +52,8 @@
 /* Begin PBXFileReference section */
 		F802527B2B026F6300B5360D /* TruthOrDare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruthOrDare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F802527E2B026F6300B5360D /* TruthOrDareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareApp.swift; sourceTree = "<group>"; };
-		F80252802B026F6300B5360D /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F80252822B026F6600B5360D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F83FF2D22B288A7200416789 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F861E32C2B21D40D0062D1F7 /* SelectTruthOrDareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTruthOrDareView.swift; sourceTree = "<group>"; };
 		F861E32E2B21E0160062D1F7 /* DareRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareRemoteService.swift; sourceTree = "<group>"; };
 		F861E3302B21E0420062D1F7 /* LiveDareRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDareRemoteService.swift; sourceTree = "<group>"; };
@@ -134,10 +134,10 @@
 				F8C400912B0F792B000B7DEB /* NetworkClient */,
 				F8C400A32B0F7A8D000B7DEB /* Widgets */,
 				F802527E2B026F6300B5360D /* TruthOrDareApp.swift */,
-				F80252802B026F6300B5360D /* SplashScreen.swift */,
 				F80252822B026F6600B5360D /* Assets.xcassets */,
 				F871A5C32B0398F60042D6D7 /* Localizable.strings */,
 				F8C400B82B0F7F13000B7DEB /* Coordinator.swift */,
+				F83FF2D22B288A7200416789 /* SplashScreen.swift */,
 			);
 			path = TruthOrDare;
 			sourceTree = "<group>";
@@ -401,6 +401,7 @@
 				F8C4008A2B0F74C0000B7DEB /* APIResponse.swift in Sources */,
 				F861E3392B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift in Sources */,
 				F8C400902B0F78A3000B7DEB /* TranslationsResponse.swift in Sources */,
+				F83FF2D32B288A7200416789 /* SplashScreen.swift in Sources */,
 				F8C400B32B0F7DCB000B7DEB /* LiveTruthRemoteService.swift in Sources */,
 				F871A5BC2B03948F0042D6D7 /* WelcomeView.swift in Sources */,
 				F861E3332B21E08C0062D1F7 /* MockDareRemoteService.swift in Sources */,
@@ -413,7 +414,6 @@
 				F861E33D2B21E24D0062D1F7 /* NeverHaveIEverViewModel.swift in Sources */,
 				F861E32F2B21E0160062D1F7 /* DareRemoteService.swift in Sources */,
 				F8C400B72B0F7EEA000B7DEB /* TruthOrDareRepository.swift in Sources */,
-				F80252812B026F6300B5360D /* SplashScreen.swift in Sources */,
 				F861E33B2B21E1CC0062D1F7 /* NeverHaveIEverRepository.swift in Sources */,
 				F861E3312B21E0420062D1F7 /* LiveDareRemoteService.swift in Sources */,
 				F861E3372B21E0D40062D1F7 /* NeverHaveIEverRemoteService.swift in Sources */,
