@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F802527F2B026F6300B5360D /* TruthOrDareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802527E2B026F6300B5360D /* TruthOrDareApp.swift */; };
+		F80252812B026F6300B5360D /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80252802B026F6300B5360D /* SplashScreen.swift */; };
+		F80252832B026F6600B5360D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80252822B026F6600B5360D /* Assets.xcassets */; };
+		F861E32D2B21D40D0062D1F7 /* SelectTruthOrDareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E32C2B21D40D0062D1F7 /* SelectTruthOrDareView.swift */; };
+		F861E32F2B21E0160062D1F7 /* DareRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E32E2B21E0160062D1F7 /* DareRemoteService.swift */; };
+		F861E3312B21E0420062D1F7 /* LiveDareRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E3302B21E0420062D1F7 /* LiveDareRemoteService.swift */; };
+		F861E3332B21E08C0062D1F7 /* MockDareRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E3322B21E08C0062D1F7 /* MockDareRemoteService.swift */; };
+		F861E3352B21E0B80062D1F7 /* LiveNeverHaveIEverRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E3342B21E0B80062D1F7 /* LiveNeverHaveIEverRemoteService.swift */; };
+		F861E3372B21E0D40062D1F7 /* NeverHaveIEverRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E3362B21E0D40062D1F7 /* NeverHaveIEverRemoteService.swift */; };
+		F861E3392B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E3382B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift */; };
+		F861E33B2B21E1CC0062D1F7 /* NeverHaveIEverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E33A2B21E1CC0062D1F7 /* NeverHaveIEverRepository.swift */; };
+		F861E33D2B21E24D0062D1F7 /* NeverHaveIEverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E33C2B21E24D0062D1F7 /* NeverHaveIEverViewModel.swift */; };
+		F861E33F2B21E3D80062D1F7 /* NeverHaveIEverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861E33E2B21E3D80062D1F7 /* NeverHaveIEverView.swift */; };
+		F871A5AF2B0390910042D6D7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F871A5AE2B0390910042D6D7 /* Lottie */; };
+		F871A5B12B0390AD0042D6D7 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F871A5B02B0390AD0042D6D7 /* LottieView.swift */; };
+		F871A5BA2B0391D60042D6D7 /* LottieConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F871A5B92B0391D60042D6D7 /* LottieConstants.swift */; };
+		F871A5BC2B03948F0042D6D7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F871A5BB2B03948F0042D6D7 /* WelcomeView.swift */; };
+		F871A5C12B0398F60042D6D7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F871A5C32B0398F60042D6D7 /* Localizable.strings */; };
+		F871A5C82B039F450042D6D7 /* demon_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F871A5C52B039F450042D6D7 /* demon_animation.json */; };
+		F871A5C92B039F450042D6D7 /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F871A5C62B039F450042D6D7 /* loading_animation.json */; };
+		F871A5CA2B039F450042D6D7 /* angel_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F871A5C72B039F450042D6D7 /* angel_animation.json */; };
+		F8826CC32B1F85FB007C08D2 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826CC22B1F85FB007C08D2 /* QuestionViewModel.swift */; };
+		F8826CD32B1FA1C0007C08D2 /* font_play.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8826CD22B1FA1C0007C08D2 /* font_play.ttf */; };
+		F8826CD52B1FA7B5007C08D2 /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826CD42B1FA7B5007C08D2 /* PlayersView.swift */; };
+		F8C30AF82B2731FB00F3F9CC /* SelectTruthOrDareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C30AF72B2731FB00F3F9CC /* SelectTruthOrDareViewModel.swift */; };
+		F8C400882B0F746E000B7DEB /* NeverHaveIEverQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400872B0F746E000B7DEB /* NeverHaveIEverQuestion.swift */; };
+		F8C4008A2B0F74C0000B7DEB /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400892B0F74C0000B7DEB /* APIResponse.swift */; };
+		F8C4008C2B0F7733000B7DEB /* TruthQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4008B2B0F7733000B7DEB /* TruthQuestion.swift */; };
+		F8C4008E2B0F7773000B7DEB /* DareQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4008D2B0F7773000B7DEB /* DareQuestion.swift */; };
+		F8C400902B0F78A3000B7DEB /* TranslationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4008F2B0F78A3000B7DEB /* TranslationsResponse.swift */; };
+		F8C400952B0F792B000B7DEB /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400922B0F792B000B7DEB /* NetworkClient.swift */; };
+		F8C400962B0F792B000B7DEB /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400932B0F792B000B7DEB /* URLSessionNetworkClient.swift */; };
+		F8C400972B0F792B000B7DEB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400942B0F792B000B7DEB /* NetworkError.swift */; };
+		F8C400AA2B0F7C92000B7DEB /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400A92B0F7C92000B7DEB /* NetworkConstants.swift */; };
+		F8C400B12B0F7D97000B7DEB /* TruthRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B02B0F7D97000B7DEB /* TruthRemoteService.swift */; };
+		F8C400B32B0F7DCB000B7DEB /* LiveTruthRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B22B0F7DCB000B7DEB /* LiveTruthRemoteService.swift */; };
+		F8C400B52B0F7EBC000B7DEB /* MockTruthRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B42B0F7EBC000B7DEB /* MockTruthRemoteService.swift */; };
+		F8C400B72B0F7EEA000B7DEB /* TruthOrDareRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B62B0F7EEA000B7DEB /* TruthOrDareRepository.swift */; };
+		F8C400B92B0F7F13000B7DEB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B82B0F7F13000B7DEB /* Coordinator.swift */; };
+		F8C400BE2B0F7FD5000B7DEB /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400BD2B0F7FD5000B7DEB /* QuestionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F802527B2B026F6300B5360D /* TruthOrDare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruthOrDare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F802527E2B026F6300B5360D /* TruthOrDareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareApp.swift; sourceTree = "<group>"; };
+		F80252802B026F6300B5360D /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		F80252822B026F6600B5360D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F861E32C2B21D40D0062D1F7 /* SelectTruthOrDareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTruthOrDareView.swift; sourceTree = "<group>"; };
+		F861E32E2B21E0160062D1F7 /* DareRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareRemoteService.swift; sourceTree = "<group>"; };
+		F861E3302B21E0420062D1F7 /* LiveDareRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDareRemoteService.swift; sourceTree = "<group>"; };
+		F861E3322B21E08C0062D1F7 /* MockDareRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDareRemoteService.swift; sourceTree = "<group>"; };
+		F861E3342B21E0B80062D1F7 /* LiveNeverHaveIEverRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNeverHaveIEverRemoteService.swift; sourceTree = "<group>"; };
+		F861E3362B21E0D40062D1F7 /* NeverHaveIEverRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverRemoteService.swift; sourceTree = "<group>"; };
+		F861E3382B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNeverHaveIEverRemoteService.swift; sourceTree = "<group>"; };
+		F861E33A2B21E1CC0062D1F7 /* NeverHaveIEverRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverRepository.swift; sourceTree = "<group>"; };
+		F861E33C2B21E24D0062D1F7 /* NeverHaveIEverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverViewModel.swift; sourceTree = "<group>"; };
+		F861E33E2B21E3D80062D1F7 /* NeverHaveIEverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverView.swift; sourceTree = "<group>"; };
+		F871A5B02B0390AD0042D6D7 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		F871A5B92B0391D60042D6D7 /* LottieConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieConstants.swift; sourceTree = "<group>"; };
+		F871A5BB2B03948F0042D6D7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F871A5C22B0398F60042D6D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F871A5C42B03993C0042D6D7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F871A5C52B039F450042D6D7 /* demon_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = demon_animation.json; path = "../../../../../Downloads/truthordare-app-master/app/src/main/res/raw/demon_animation.json"; sourceTree = "<group>"; };
+		F871A5C62B039F450042D6D7 /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading_animation.json; path = "../../../../../Downloads/truthordare-app-master/app/src/main/res/raw/loading_animation.json"; sourceTree = "<group>"; };
+		F871A5C72B039F450042D6D7 /* angel_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = angel_animation.json; path = "../../../../../Downloads/truthordare-app-master/app/src/main/res/raw/angel_animation.json"; sourceTree = "<group>"; };
+		F8826CC22B1F85FB007C08D2 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		F8826CCB2B1FA0A9007C08D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F8826CD22B1FA1C0007C08D2 /* font_play.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font_play.ttf; sourceTree = "<group>"; };
+		F8826CD42B1FA7B5007C08D2 /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
+		F8C30AF72B2731FB00F3F9CC /* SelectTruthOrDareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTruthOrDareViewModel.swift; sourceTree = "<group>"; };
+		F8C400872B0F746E000B7DEB /* NeverHaveIEverQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverQuestion.swift; sourceTree = "<group>"; };
+		F8C400892B0F74C0000B7DEB /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		F8C4008B2B0F7733000B7DEB /* TruthQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthQuestion.swift; sourceTree = "<group>"; };
+		F8C4008D2B0F7773000B7DEB /* DareQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareQuestion.swift; sourceTree = "<group>"; };
+		F8C4008F2B0F78A3000B7DEB /* TranslationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationsResponse.swift; sourceTree = "<group>"; };
+		F8C400922B0F792B000B7DEB /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		F8C400932B0F792B000B7DEB /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
+		F8C400942B0F792B000B7DEB /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F8C400A92B0F7C92000B7DEB /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		F8C400B02B0F7D97000B7DEB /* TruthRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthRemoteService.swift; sourceTree = "<group>"; };
+		F8C400B22B0F7DCB000B7DEB /* LiveTruthRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTruthRemoteService.swift; sourceTree = "<group>"; };
+		F8C400B42B0F7EBC000B7DEB /* MockTruthRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTruthRemoteService.swift; sourceTree = "<group>"; };
+		F8C400B62B0F7EEA000B7DEB /* TruthOrDareRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareRepository.swift; sourceTree = "<group>"; };
+		F8C400B82B0F7F13000B7DEB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F8C400BD2B0F7FD5000B7DEB /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F80252782B026F6300B5360D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F871A5AF2B0390910042D6D7 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F80252722B026F6300B5360D = {
+			isa = PBXGroup;
+			children = (
+				F802527D2B026F6300B5360D /* TruthOrDare */,
+				F802527C2B026F6300B5360D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F802527C2B026F6300B5360D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F802527B2B026F6300B5360D /* TruthOrDare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F802527D2B026F6300B5360D /* TruthOrDare */ = {
+			isa = PBXGroup;
+			children = (
+				F8826CCB2B1FA0A9007C08D2 /* Info.plist */,
+				F8C31D8C2B1BB0CC0053E9D0 /* Preview Content */,
+				F8C400AB2B0F7D46000B7DEB /* Data */,
+				F871A5B22B03910C0042D6D7 /* Assets */,
+				F8C400862B0F7462000B7DEB /* Entities */,
+				F8C400982B0F793E000B7DEB /* Features */,
+				F8C400912B0F792B000B7DEB /* NetworkClient */,
+				F8C400A32B0F7A8D000B7DEB /* Widgets */,
+				F802527E2B026F6300B5360D /* TruthOrDareApp.swift */,
+				F80252802B026F6300B5360D /* SplashScreen.swift */,
+				F80252822B026F6600B5360D /* Assets.xcassets */,
+				F871A5C32B0398F60042D6D7 /* Localizable.strings */,
+				F8C400B82B0F7F13000B7DEB /* Coordinator.swift */,
+			);
+			path = TruthOrDare;
+			sourceTree = "<group>";
+		};
+		F871A5B22B03910C0042D6D7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F871A5C72B039F450042D6D7 /* angel_animation.json */,
+				F871A5C52B039F450042D6D7 /* demon_animation.json */,
+				F871A5C62B039F450042D6D7 /* loading_animation.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F8C31D8C2B1BB0CC0053E9D0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8C400862B0F7462000B7DEB /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F8C400872B0F746E000B7DEB /* NeverHaveIEverQuestion.swift */,
+				F8C400892B0F74C0000B7DEB /* APIResponse.swift */,
+				F8C4008B2B0F7733000B7DEB /* TruthQuestion.swift */,
+				F8C4008D2B0F7773000B7DEB /* DareQuestion.swift */,
+				F8C4008F2B0F78A3000B7DEB /* TranslationsResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F8C400912B0F792B000B7DEB /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				F8C400922B0F792B000B7DEB /* NetworkClient.swift */,
+				F8C400932B0F792B000B7DEB /* URLSessionNetworkClient.swift */,
+				F8C400942B0F792B000B7DEB /* NetworkError.swift */,
+			);
+			name = NetworkClient;
+			path = ../../../../Downloads/StarWars/StarWars/NetworkClient;
+			sourceTree = "<group>";
+		};
+		F8C400982B0F793E000B7DEB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F8C400BA2B0F7FA9000B7DEB /* Welcome */,
+				F8C400A22B0F79FF000B7DEB /* Question */,
+				F8C400A12B0F79F3000B7DEB /* SelectTruthOrDare */,
+				F8C400A02B0F79E8000B7DEB /* NeverHaveIEver */,
+				F8C4009F2B0F79B9000B7DEB /* Players */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F8C4009F2B0F79B9000B7DEB /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				F8826CD42B1FA7B5007C08D2 /* PlayersView.swift */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		F8C400A02B0F79E8000B7DEB /* NeverHaveIEver */ = {
+			isa = PBXGroup;
+			children = (
+				F861E33C2B21E24D0062D1F7 /* NeverHaveIEverViewModel.swift */,
+				F861E33E2B21E3D80062D1F7 /* NeverHaveIEverView.swift */,
+			);
+			path = NeverHaveIEver;
+			sourceTree = "<group>";
+		};
+		F8C400A12B0F79F3000B7DEB /* SelectTruthOrDare */ = {
+			isa = PBXGroup;
+			children = (
+				F861E32C2B21D40D0062D1F7 /* SelectTruthOrDareView.swift */,
+				F8C30AF72B2731FB00F3F9CC /* SelectTruthOrDareViewModel.swift */,
+			);
+			path = SelectTruthOrDare;
+			sourceTree = "<group>";
+		};
+		F8C400A22B0F79FF000B7DEB /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				F8C400BD2B0F7FD5000B7DEB /* QuestionView.swift */,
+				F8826CC22B1F85FB007C08D2 /* QuestionViewModel.swift */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		F8C400A32B0F7A8D000B7DEB /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				F8826CD22B1FA1C0007C08D2 /* font_play.ttf */,
+				F871A5B02B0390AD0042D6D7 /* LottieView.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		F8C400A42B0F7AAA000B7DEB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F871A5B92B0391D60042D6D7 /* LottieConstants.swift */,
+				F8C400A92B0F7C92000B7DEB /* NetworkConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F8C400A52B0F7B11000B7DEB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F8C400AF2B0F7D80000B7DEB /* NeverHaveIEver */,
+				F8C400AE2B0F7D7C000B7DEB /* Dare */,
+				F8C400AD2B0F7D75000B7DEB /* Truth */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F8C400AB2B0F7D46000B7DEB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F8C400A42B0F7AAA000B7DEB /* Constants */,
+				F8C400AC2B0F7D4F000B7DEB /* Repository */,
+				F8C400A52B0F7B11000B7DEB /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F8C400AC2B0F7D4F000B7DEB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8C400B62B0F7EEA000B7DEB /* TruthOrDareRepository.swift */,
+				F861E33A2B21E1CC0062D1F7 /* NeverHaveIEverRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F8C400AD2B0F7D75000B7DEB /* Truth */ = {
+			isa = PBXGroup;
+			children = (
+				F8C400B02B0F7D97000B7DEB /* TruthRemoteService.swift */,
+				F8C400B22B0F7DCB000B7DEB /* LiveTruthRemoteService.swift */,
+				F8C400B42B0F7EBC000B7DEB /* MockTruthRemoteService.swift */,
+			);
+			path = Truth;
+			sourceTree = "<group>";
+		};
+		F8C400AE2B0F7D7C000B7DEB /* Dare */ = {
+			isa = PBXGroup;
+			children = (
+				F861E32E2B21E0160062D1F7 /* DareRemoteService.swift */,
+				F861E3302B21E0420062D1F7 /* LiveDareRemoteService.swift */,
+				F861E3322B21E08C0062D1F7 /* MockDareRemoteService.swift */,
+			);
+			path = Dare;
+			sourceTree = "<group>";
+		};
+		F8C400AF2B0F7D80000B7DEB /* NeverHaveIEver */ = {
+			isa = PBXGroup;
+			children = (
+				F861E3342B21E0B80062D1F7 /* LiveNeverHaveIEverRemoteService.swift */,
+				F861E3362B21E0D40062D1F7 /* NeverHaveIEverRemoteService.swift */,
+				F861E3382B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift */,
+			);
+			path = NeverHaveIEver;
+			sourceTree = "<group>";
+		};
+		F8C400BA2B0F7FA9000B7DEB /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F871A5BB2B03948F0042D6D7 /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F802527A2B026F6300B5360D /* TruthOrDare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80252892B026F6600B5360D /* Build configuration list for PBXNativeTarget "TruthOrDare" */;
+			buildPhases = (
+				F80252772B026F6300B5360D /* Sources */,
+				F80252782B026F6300B5360D /* Frameworks */,
+				F80252792B026F6300B5360D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TruthOrDare;
+			packageProductDependencies = (
+				F871A5AE2B0390910042D6D7 /* Lottie */,
+			);
+			productName = TruthOrDare;
+			productReference = F802527B2B026F6300B5360D /* TruthOrDare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F80252732B026F6300B5360D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F802527A2B026F6300B5360D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F80252762B026F6300B5360D /* Build configuration list for PBXProject "TruthOrDare" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = es;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = F80252722B026F6300B5360D;
+			packageReferences = (
+				F871A5AD2B0390910042D6D7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = F802527C2B026F6300B5360D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F802527A2B026F6300B5360D /* TruthOrDare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F80252792B026F6300B5360D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F871A5C12B0398F60042D6D7 /* Localizable.strings in Resources */,
+				F80252832B026F6600B5360D /* Assets.xcassets in Resources */,
+				F871A5C92B039F450042D6D7 /* loading_animation.json in Resources */,
+				F8826CD32B1FA1C0007C08D2 /* font_play.ttf in Resources */,
+				F871A5C82B039F450042D6D7 /* demon_animation.json in Resources */,
+				F871A5CA2B039F450042D6D7 /* angel_animation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F80252772B026F6300B5360D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C400BE2B0F7FD5000B7DEB /* QuestionView.swift in Sources */,
+				F861E32D2B21D40D0062D1F7 /* SelectTruthOrDareView.swift in Sources */,
+				F8826CC32B1F85FB007C08D2 /* QuestionViewModel.swift in Sources */,
+				F8C4008A2B0F74C0000B7DEB /* APIResponse.swift in Sources */,
+				F861E3392B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift in Sources */,
+				F8C400902B0F78A3000B7DEB /* TranslationsResponse.swift in Sources */,
+				F8C400B32B0F7DCB000B7DEB /* LiveTruthRemoteService.swift in Sources */,
+				F871A5BC2B03948F0042D6D7 /* WelcomeView.swift in Sources */,
+				F861E3332B21E08C0062D1F7 /* MockDareRemoteService.swift in Sources */,
+				F8C400952B0F792B000B7DEB /* NetworkClient.swift in Sources */,
+				F8C400962B0F792B000B7DEB /* URLSessionNetworkClient.swift in Sources */,
+				F8C30AF82B2731FB00F3F9CC /* SelectTruthOrDareViewModel.swift in Sources */,
+				F8C400B52B0F7EBC000B7DEB /* MockTruthRemoteService.swift in Sources */,
+				F8826CD52B1FA7B5007C08D2 /* PlayersView.swift in Sources */,
+				F861E33F2B21E3D80062D1F7 /* NeverHaveIEverView.swift in Sources */,
+				F861E33D2B21E24D0062D1F7 /* NeverHaveIEverViewModel.swift in Sources */,
+				F861E32F2B21E0160062D1F7 /* DareRemoteService.swift in Sources */,
+				F8C400B72B0F7EEA000B7DEB /* TruthOrDareRepository.swift in Sources */,
+				F80252812B026F6300B5360D /* SplashScreen.swift in Sources */,
+				F861E33B2B21E1CC0062D1F7 /* NeverHaveIEverRepository.swift in Sources */,
+				F861E3312B21E0420062D1F7 /* LiveDareRemoteService.swift in Sources */,
+				F861E3372B21E0D40062D1F7 /* NeverHaveIEverRemoteService.swift in Sources */,
+				F8C400B12B0F7D97000B7DEB /* TruthRemoteService.swift in Sources */,
+				F8C400882B0F746E000B7DEB /* NeverHaveIEverQuestion.swift in Sources */,
+				F802527F2B026F6300B5360D /* TruthOrDareApp.swift in Sources */,
+				F8C4008C2B0F7733000B7DEB /* TruthQuestion.swift in Sources */,
+				F8C4008E2B0F7773000B7DEB /* DareQuestion.swift in Sources */,
+				F8C400AA2B0F7C92000B7DEB /* NetworkConstants.swift in Sources */,
+				F861E3352B21E0B80062D1F7 /* LiveNeverHaveIEverRemoteService.swift in Sources */,
+				F8C400972B0F792B000B7DEB /* NetworkError.swift in Sources */,
+				F871A5B12B0390AD0042D6D7 /* LottieView.swift in Sources */,
+				F8C400B92B0F7F13000B7DEB /* Coordinator.swift in Sources */,
+				F871A5BA2B0391D60042D6D7 /* LottieConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F871A5C32B0398F60042D6D7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F871A5C22B0398F60042D6D7 /* en */,
+				F871A5C42B03993C0042D6D7 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F80252872B026F6600B5360D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F80252882B026F6600B5360D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F802528A2B026F6600B5360D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TruthOrDare/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TruthOrDare/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bgralop.TruthOrDare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F802528B2B026F6600B5360D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TruthOrDare/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TruthOrDare/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bgralop.TruthOrDare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F80252762B026F6300B5360D /* Build configuration list for PBXProject "TruthOrDare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80252872B026F6600B5360D /* Debug */,
+				F80252882B026F6600B5360D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F80252892B026F6600B5360D /* Build configuration list for PBXNativeTarget "TruthOrDare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F802528A2B026F6600B5360D /* Debug */,
+				F802528B2B026F6600B5360D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F871A5AD2B0390910042D6D7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F871A5AE2B0390910042D6D7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F871A5AD2B0390910042D6D7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F80252732B026F6300B5360D /* Project object */;
+}
