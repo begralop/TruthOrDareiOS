@@ -14,9 +14,9 @@ struct LiveDareRemoteService: DareRemoteService {
         self.networkClient = networkClient
     }
     
-    func getDare() async throws -> [DareQuestion] {
-        let response: APIResponse<DareQuestion> = try await networkClient.getCall(url: NetworkConstants.dareQuestionUrl, queryParams: nil)
+    func getDare() async throws -> DareQuestion {
+        let response: DareQuestion = try await networkClient.getCall(url: NetworkConstants.dareQuestionUrl, queryParams: nil)
         
-        return response.results
+        return response
     }
 }

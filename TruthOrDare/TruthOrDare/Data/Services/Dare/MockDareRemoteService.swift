@@ -7,7 +7,7 @@
 
 import Foundation
 struct MockDareRemoteService: DareRemoteService {
-    func getDare() async throws -> [DareQuestion] {
-        return [.example]
+    func getDare() async throws -> DareQuestion {
+        return .example
     }
 }

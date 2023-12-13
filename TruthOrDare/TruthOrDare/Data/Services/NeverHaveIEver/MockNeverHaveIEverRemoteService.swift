@@ -7,7 +7,7 @@
 
 import Foundation
 struct MockNeverHaveIEverRemoteService: NeverHaveIEverRemoteService {
-    func getNeverHaveIEver() async throws -> [NeverHaveIEverQuestion] {
-        return [.example]
+    func getNeverHaveIEver() async throws -> NeverHaveIEverQuestion {
+        return .example
     }
 }

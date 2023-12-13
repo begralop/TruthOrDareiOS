@@ -33,7 +33,6 @@
 		F8826CD52B1FA7B5007C08D2 /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826CD42B1FA7B5007C08D2 /* PlayersView.swift */; };
 		F8C30AF82B2731FB00F3F9CC /* SelectTruthOrDareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C30AF72B2731FB00F3F9CC /* SelectTruthOrDareViewModel.swift */; };
 		F8C400882B0F746E000B7DEB /* NeverHaveIEverQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400872B0F746E000B7DEB /* NeverHaveIEverQuestion.swift */; };
-		F8C4008A2B0F74C0000B7DEB /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400892B0F74C0000B7DEB /* APIResponse.swift */; };
 		F8C4008C2B0F7733000B7DEB /* TruthQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4008B2B0F7733000B7DEB /* TruthQuestion.swift */; };
 		F8C4008E2B0F7773000B7DEB /* DareQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4008D2B0F7773000B7DEB /* DareQuestion.swift */; };
 		F8C400902B0F78A3000B7DEB /* TranslationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4008F2B0F78A3000B7DEB /* TranslationsResponse.swift */; };
@@ -47,6 +46,7 @@
 		F8C400B72B0F7EEA000B7DEB /* TruthOrDareRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B62B0F7EEA000B7DEB /* TruthOrDareRepository.swift */; };
 		F8C400B92B0F7F13000B7DEB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400B82B0F7F13000B7DEB /* Coordinator.swift */; };
 		F8C400BE2B0F7FD5000B7DEB /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C400BD2B0F7FD5000B7DEB /* QuestionView.swift */; };
+		F8F26F572B29D8BF00EDCADD /* alex_murphy_solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8F26F562B29D8BF00EDCADD /* alex_murphy_solid.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +78,6 @@
 		F8826CD42B1FA7B5007C08D2 /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
 		F8C30AF72B2731FB00F3F9CC /* SelectTruthOrDareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTruthOrDareViewModel.swift; sourceTree = "<group>"; };
 		F8C400872B0F746E000B7DEB /* NeverHaveIEverQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverHaveIEverQuestion.swift; sourceTree = "<group>"; };
-		F8C400892B0F74C0000B7DEB /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		F8C4008B2B0F7733000B7DEB /* TruthQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthQuestion.swift; sourceTree = "<group>"; };
 		F8C4008D2B0F7773000B7DEB /* DareQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareQuestion.swift; sourceTree = "<group>"; };
 		F8C4008F2B0F78A3000B7DEB /* TranslationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationsResponse.swift; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		F8C400B62B0F7EEA000B7DEB /* TruthOrDareRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareRepository.swift; sourceTree = "<group>"; };
 		F8C400B82B0F7F13000B7DEB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F8C400BD2B0F7FD5000B7DEB /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		F8F26F562B29D8BF00EDCADD /* alex_murphy_solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = alex_murphy_solid.ttf; path = TruthOrDare/alex_murphy_solid.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				F802527D2B026F6300B5360D /* TruthOrDare */,
+				F8F26F562B29D8BF00EDCADD /* alex_murphy_solid.ttf */,
 				F802527C2B026F6300B5360D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -163,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				F8C400872B0F746E000B7DEB /* NeverHaveIEverQuestion.swift */,
-				F8C400892B0F74C0000B7DEB /* APIResponse.swift */,
 				F8C4008B2B0F7733000B7DEB /* TruthQuestion.swift */,
 				F8C4008D2B0F7773000B7DEB /* DareQuestion.swift */,
 				F8C4008F2B0F78A3000B7DEB /* TranslationsResponse.swift */,
@@ -379,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F26F572B29D8BF00EDCADD /* alex_murphy_solid.ttf in Resources */,
 				F871A5C12B0398F60042D6D7 /* Localizable.strings in Resources */,
 				F80252832B026F6600B5360D /* Assets.xcassets in Resources */,
 				F871A5C92B039F450042D6D7 /* loading_animation.json in Resources */,
@@ -398,7 +399,6 @@
 				F8C400BE2B0F7FD5000B7DEB /* QuestionView.swift in Sources */,
 				F861E32D2B21D40D0062D1F7 /* SelectTruthOrDareView.swift in Sources */,
 				F8826CC32B1F85FB007C08D2 /* QuestionViewModel.swift in Sources */,
-				F8C4008A2B0F74C0000B7DEB /* APIResponse.swift in Sources */,
 				F861E3392B21E10F0062D1F7 /* MockNeverHaveIEverRemoteService.swift in Sources */,
 				F8C400902B0F78A3000B7DEB /* TranslationsResponse.swift in Sources */,
 				F83FF2D32B288A7200416789 /* SplashScreen.swift in Sources */,

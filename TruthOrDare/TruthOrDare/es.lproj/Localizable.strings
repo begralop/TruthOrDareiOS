@@ -1,5 +1,7 @@
 "welcome_view_text" = "Bienvenid@ a…
-Verdad o atrevimiento!";
+Verdad 
+o
+atrevimiento!";
 "app_name" = "Verdad o atrevimiento";
 "nihe_view_text" = "Yo nunca...";
 "select_turn_view" = "Es el turno de…";
@@ -12,4 +14,9 @@ Verdad o atrevimiento!";
 "btn_play_welcome_view" = "JUGAR AHORA";
 "btn_play_nhie_welcome_view" = "YO NUNCA…";
 "btn_next_questions_view" = "SIGUIENTE";
-"tv_questions_view" = "La pregunta es…";
+"error_message_names" = "No has introducido ningún nombre. Por favor, agrega al menos un nombre antes de jugar.";
+"error_message_no_names_list" = "No has introducido ningún nombre.";
+"confirmation_button" = "Ok";
+"error_alert" = "Error";
+"retry_button" = "Reintentar";
+"N/A" = "N/A";

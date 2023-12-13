@@ -5,6 +5,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Widgets/font_play.ttf</string>
+		<string>alex_murphy_solid.ttf</string>
 	</array>
 </dict>
 </plist>

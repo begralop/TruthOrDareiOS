@@ -7,5 +7,5 @@
 
 import Foundation
 protocol NeverHaveIEverRemoteService {
-    func getNeverHaveIEver() async throws -> [NeverHaveIEverQuestion]
+    func getNeverHaveIEver() async throws -> NeverHaveIEverQuestion
 }

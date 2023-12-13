@@ -25,7 +25,7 @@ struct WelcomeView: View {
 
                 VStack {
                     Text(NSLocalizedString("welcome_view_text", comment: ""))
-                        .font(.title)
+                        .font(Font.custom("Alex-Murphy-Solid", size: 60))
                         .foregroundColor(Color.black)
                         .padding(.top, 335)
                         .multilineTextAlignment(.center)
@@ -35,10 +35,12 @@ struct WelcomeView: View {
                     Button(action: {
                         isPlayWelcomeViewActive = true
                     }) {
-                        Text(NSLocalizedString("btn_play_welcome_view", comment: ""))
-                            .frame(width: 200, height: 60)
-                            .background(Color.blue)
-                            .foregroundColor(Color.white)
+                    Text(NSLocalizedString("btn_play_welcome_view", comment: ""))
+                        .font(Font.custom("Alex-Murphy-Solid", size: 40))
+                        .frame(width: 250, height: 90)
+                        .background(Color.blue)
+                        .foregroundColor(Color.white)
+                        .cornerRadius(12)
                     }
                     .padding(.top, 28)
                     .navigationDestination(isPresented: $isPlayWelcomeViewActive) {
@@ -49,12 +51,14 @@ struct WelcomeView: View {
                         isPlayNHIEWelcomeViewActive = true
                     }) {
                     Text(NSLocalizedString("btn_play_nhie_welcome_view", comment: ""))
-                        .font(.custom("custom_font", size: 18))
+                            .font(Font.custom("Alex-Murphy-Solid", size: 28))
                         .frame(width: 160, height: 60)
                         .background(Color.blue)
                         .foregroundColor(Color.white)
+                        .cornerRadius(12)
+
                     }
-                    .padding(.top, 28)
+                    .padding(.top, 16)
                     .navigationDestination(isPresented: $isPlayNHIEWelcomeViewActive) {
                         coordinator.makeNeverHaveIEverView()
                     }

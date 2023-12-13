@@ -12,7 +12,7 @@ class NeverHaveIEverViewModel: ObservableObject {
     private let neverHaveIEverRepository: NeverHaveIEverRepository
     
     @Published var isLoading = false
-    @Published var neverHaveIEver: [NeverHaveIEverQuestion]?
+    @Published var neverHaveIEver: NeverHaveIEverQuestion?
 
     @Published var error: Error?
     

@@ -7,5 +7,5 @@
 
 import Foundation
 protocol TruthRemoteService {
-    func getTruth() async throws -> [TruthQuestion]
+    func getTruth() async throws -> TruthQuestion
 }

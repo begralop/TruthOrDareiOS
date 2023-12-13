@@ -13,6 +13,7 @@ struct QuestionView: View {
     @EnvironmentObject var coordinator: Coordinator
     @State private var questionText: String = ""
     @State private var dataLoaded: Bool = false
+    @State private var isPlaySelectTruthOrDareViewActive = false
 
     let truthOrDare: String
     
@@ -22,45 +23,56 @@ struct QuestionView: View {
     }
     
     var body: some View {
-        if viewModel.isLoading {
-            ProgressView()
-        } else {
-            ZStack {
-                Image("BackgroundImage")
-                    .resizable()
-                    .frame(width: 1000, height: 1000)
-                    .opacity(0.88)
-                
-                VStack {
-                    Spacer()
+        ZStack {
+            if viewModel.isLoading {
+                ProgressView()
+            } else {
+                ZStack {
+                    Image("BackgroundImage")
+                        .resizable()
+                        .frame(width: 1000, height: 1000)
+                        .opacity(0.88)
                     
-                    Text("\(questionText)")
-                        .font(Font.custom("font_play", size: 18))
-                        .foregroundColor(Color.black)
-                        .padding(.horizontal, 32)
-                        .padding(.top, 255)
-                        .multilineTextAlignment(.center)
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        coordinator.isQuestionViewActive = false
-                    }) {
-                        Text("Siguiente")
-                            .font(.custom("custom_font", size: 28))
-                            .foregroundColor(Color.white)
-                            .frame(width: 160, height: 60)
+                    VStack {
+                        Spacer()
+                        Text(questionText)
+                            .font(Font.custom("Alex-Murphy-Solid", size: 50))                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                            .frame(width: 325, height: 360)
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color.white, lineWidth: 2)
+                            )
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .fill(LinearGradient(gradient: Gradient(colors: [Color.blue, Color.black]), startPoint: .top, endPoint: .bottom))
+                            )
+                                        
+                        Button(action: {
+                            coordinator.isQuestionViewActive = false
+                            isPlaySelectTruthOrDareViewActive = true
+                        }) {
+                            Text(NSLocalizedString("btn_next_questions_view", comment: ""))
+                                .font(Font.custom("Alex-Murphy-Solid", size: 40))
+                                .frame(width: 200, height: 80)
+                                .background(Color.blue)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(12)
+                        }
+                        .padding(.top, 80)
+                        .navigationDestination(isPresented: $isPlaySelectTruthOrDareViewActive) {
+                            SelectTruthOrDareView()
+                        }
+                        Spacer()
                     }
-                    .padding(.top, 36)
-                    
-                    Spacer()
                 }
             }
-            .task {
-                await print(viewModel.getTruth())
+        }
+        .task {
                 await verifyTruthOrDare(truthOrDare: truthOrDare)
             }
-            .alert("Error", isPresented: Binding.constant(viewModel.error != nil)) {
+        .alert("Error", isPresented: Binding.constant(viewModel.error != nil)) {
                 Button("OK") {}
                 Button("Retry") {
                     Task {
@@ -70,41 +82,33 @@ struct QuestionView: View {
             } message: {
                 Text(viewModel.error?.localizedDescription ?? "")
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    
-                }
-            }
-            .navigationBarBackButtonHidden(true)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {}
         }
+        .navigationBarBackButtonHidden(true)
     }
     
     func verifyTruthOrDare(truthOrDare: String) async {
         if truthOrDare == "1" {
             await viewModel.getTruth()
-            if let firstTruthQuestion = viewModel.truth.first?.question {
-                print(firstTruthQuestion)
+            if let firstTruthQuestion = viewModel.truth?.translations.es {
                 questionText = firstTruthQuestion
             } else {
-                questionText = "N/A"
+                questionText = NSLocalizedString("N/A", comment: "")
             }
         }
-
         if truthOrDare == "2" {
             await viewModel.getDare()
-            if let firstDareQuestion = viewModel.dare.first?.question {
+            if let firstDareQuestion = viewModel.dare?.translations.es {
                 questionText = firstDareQuestion
             } else {
-                questionText = "N/A"
+                questionText = NSLocalizedString("N/A", comment: "")
             }
         }
-
         dataLoaded = true
     }
-
 }
-
 
 #Preview {
     let coordinator = Coordinator(mock: true)

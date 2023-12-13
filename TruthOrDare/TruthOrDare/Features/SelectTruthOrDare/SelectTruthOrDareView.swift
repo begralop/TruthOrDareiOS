@@ -30,9 +30,9 @@ struct SelectTruthOrDareView: View {
                     isPlayTruthViewActive = true
                 }) {
                     Text(NSLocalizedString("select_btn_truth_view", comment: ""))
-                        .font(.custom("custom_font", size: 24))
+                        .font(Font.custom("Alex-Murphy-Solid", size: 50))
                         .foregroundColor(.white)
-                        .frame(width: 250, height: 150)
+                        .frame(width: 300, height: 150)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color.white, lineWidth: 2)
@@ -57,8 +57,7 @@ struct SelectTruthOrDareView: View {
             .padding(.top, 100)
 
             Text(playerName)
-                .font(.custom("custom_font", size: 60))
-                .bold()
+                .font(Font.custom("Alex-Murphy-Solid", size: 65))         
                 .foregroundColor(.white)
             
             Spacer()
@@ -68,9 +67,9 @@ struct SelectTruthOrDareView: View {
                     isPlayDareViewActive = true
                 }) {
                     Text(NSLocalizedString("select_btn_dare_view", comment: ""))
-                        .font(.custom("custom_font", size: 24))
+                        .font(Font.custom("Alex-Murphy-Solid", size: 50))
                         .foregroundColor(.white)
-                        .frame(width: 250, height: 150)
+                        .frame(width: 300, height: 150)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color.white, lineWidth: 2)

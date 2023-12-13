@@ -7,5 +7,5 @@
 
 import Foundation
 protocol DareRemoteService {
-    func getDare() async throws -> [DareQuestion]
+    func getDare() async throws -> DareQuestion
 }

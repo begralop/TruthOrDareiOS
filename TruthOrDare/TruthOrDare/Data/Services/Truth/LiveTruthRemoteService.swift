@@ -14,8 +14,8 @@ struct LiveTruthRemoteService: TruthRemoteService {
         self.networkClient = networkClient
     }
     
-    func getTruth() async throws -> [TruthQuestion] {
-        let response: APIResponse<TruthQuestion> = try await networkClient.getCall(url: NetworkConstants.truthQuestionUrl, queryParams: nil)
-        return response.results
+    func getTruth() async throws -> TruthQuestion {
+        let response: TruthQuestion = try await networkClient.getCall(url: NetworkConstants.truthQuestionUrl, queryParams: nil)
+        return response
     }
 }

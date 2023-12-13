@@ -15,11 +15,11 @@ struct TruthOrDareRepository {
         self.dareRemoteService = dareRemoteService
     }
     
-    func getTruth() async throws -> [TruthQuestion] {
+    func getTruth() async throws -> TruthQuestion {
         return try await truthRemoteService.getTruth()
     }
     
-    func getDare() async throws -> [DareQuestion] {
+    func getDare() async throws -> DareQuestion {
         return try await dareRemoteService.getDare()
     }
 }

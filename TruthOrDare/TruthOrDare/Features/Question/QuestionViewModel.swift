@@ -10,8 +10,8 @@ class QuestionViewModel: ObservableObject {
     
     private let truthOrDareRepository: TruthOrDareRepository
     @Published var isLoading = false
-    @Published var truth: [TruthQuestion] = []
-    @Published var dare: [DareQuestion] = []
+    @Published var truth: TruthQuestion?
+    @Published var dare: DareQuestion?
 
     @Published var error: Error?
     

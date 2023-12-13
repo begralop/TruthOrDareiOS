@@ -14,9 +14,8 @@ struct LiveNeverHaveIEverRemoteService: NeverHaveIEverRemoteService {
         self.networkClient = networkClient
     }
     
-    func getNeverHaveIEver() async throws -> [NeverHaveIEverQuestion] {
-        let response: APIResponse<NeverHaveIEverQuestion> = try await networkClient.getCall(url: NetworkConstants.neverHaveIEverQuestionUrl, queryParams: nil)
-        
-        return response.results
+    func getNeverHaveIEver() async throws -> NeverHaveIEverQuestion {
+        let response: NeverHaveIEverQuestion = try await networkClient.getCall(url: NetworkConstants.neverHaveIEverQuestionUrl, queryParams: nil)
+        return response
     }
 }

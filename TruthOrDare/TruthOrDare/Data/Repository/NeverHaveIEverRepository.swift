@@ -13,7 +13,7 @@ struct NeverHaveIEverRepository {
         self.neverHaveIEverRemoteService = neverHaveIEverRemoteService
     }
     
-    func getNeverHaveIEver() async throws -> [NeverHaveIEverQuestion] {
+    func getNeverHaveIEver() async throws -> NeverHaveIEverQuestion {
         return try await neverHaveIEverRemoteService.getNeverHaveIEver()
     }
 }

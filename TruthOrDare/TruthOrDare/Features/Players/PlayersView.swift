@@ -20,9 +20,9 @@ struct PlayersView: View {
         NavigationView {
             VStack {
                 VStack(alignment: .leading) {
-                    TextField("Enter Name", text: $playerName)
-                        .font(.custom("CustomFont", size: 16))
-                        .multilineTextAlignment(.center)
+                    TextField(NSLocalizedString("add_name_button_players_view", comment: ""), text: $playerName)
+                        .font(Font.custom("Alex-Murphy-Solid", size: 30))
+                        .multilineTextAlignment(.leading)
                         .padding()
                         .background(Color.gray.opacity(0.1))
                         .cornerRadius(8)
@@ -47,43 +47,42 @@ struct PlayersView: View {
                     .padding(.leading, 16)
                 }
 
-                VStack(alignment: .leading, spacing: 8) {
-                    ForEach(nameList.indices, id: \.self) { index in
-                        HStack {
-                            Text(nameList[index])
-                                .font(.custom("CustomFont", size: 20))
-                                .bold()
-                                .padding()
-
-                            Spacer()
-                            
-                            Button(action: {
-                                removeName(at: index)
-                            }
-                            ) {
-                                Image(systemName: "trash")
-                                    .foregroundColor(.red)
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 8) {
+                        ForEach(nameList.indices, id: \.self) { index in
+                            HStack {
+                                Text(nameList[index])
+                                    .font(Font.custom("Alex-Murphy-Solid", size: 50))
                                     .padding()
+
+                                Spacer()
+
+                                Button(action: {
+                                    removeName(at: index)
+                                }) {
+                                    Image(systemName: "trash")
+                                        .foregroundColor(.red)
+                                        .padding()
+                                }
                             }
-                            
                         }
                     }
                 }
-
                 Spacer()
 
                 Button(action: {
                     if nameList.isEmpty {
-                        showAlert(message: "No has introducido ningún nombre. Por favor, agrega al menos un nombre antes de jugar.")
+                        showAlert(message: NSLocalizedString("error_message_names", comment: ""))
                     } else {
                         isPlaySelectTruthOrDareViewActive = true
                     }
                 }) {
                     Text(NSLocalizedString("play_button_players_view", comment: ""))
-                        .font(.custom("custom_font", size: 18))
-                        .frame(width: 160, height: 60)
+                        .font(Font.custom("Alex-Murphy-Solid", size: 50))
+                        .frame(width: 180, height: 70)
                         .background(Color.blue)
                         .foregroundColor(Color.white)
+                        .cornerRadius(12)
                 }
                 .padding(.bottom, 16)
                 .navigationDestination(isPresented: $isPlaySelectTruthOrDareViewActive) {
@@ -95,7 +94,7 @@ struct PlayersView: View {
                 ToolbarItem(placement: .principal) {
                     VStack {
                         Text(NSLocalizedString("et_players_view", comment: ""))
-                            .font(.title)
+                            .font(Font.custom("Alex-Murphy-Solid", size: 65))
                             .bold()
                             .foregroundColor(Color.black)
                             .padding(.top, 24)
@@ -105,7 +104,7 @@ struct PlayersView: View {
             .navigationBarBackButtonHidden(true)
             .padding(.horizontal, 16)
             .alert(isPresented: $showAlert) {
-                Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                Alert(title: Text(NSLocalizedString("error_alert", comment: "")), message: Text(alertMessage), dismissButton: .default(Text(NSLocalizedString("confirmation_button", comment: ""))))
             }
         }
     }
@@ -121,7 +120,7 @@ struct PlayersView: View {
     
     private func addName(){
         if playerName.isEmpty {
-            showAlert(message: "No has introducido ningún nombre.")
+            showAlert(message: NSLocalizedString("error_message_no_names_list", comment: ""))
         } else {
             nameList.append(playerName)
             saveNameList(nameList)
@@ -132,17 +131,6 @@ struct PlayersView: View {
     private func showAlert(message: String) {
         alertMessage = message
         showAlert = true
-    }
-    
-    private func confirmationAlert(message: String, action: @escaping () -> Void) {
-        _ = Alert(
-            title: Text("Confirmación"),
-            message: Text(message),
-            primaryButton: .destructive(Text("Sí")) {
-                action()
-            },
-            secondaryButton: .cancel(Text("Cancelar"))
-        )
     }
 }
 
